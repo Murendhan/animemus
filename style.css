@@ -1,0 +1,196 @@
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47de;
+    --color-base2: #022a30;
+    --color-brand: #0bebf3;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+section{
+    margin-bottom: 60px;
+}
+#title{
+    /* padding: 1% 15%; */
+    /* background-image: linear-gradient(to right,rgb(171, 67, 219),rgb(243, 180, 43)); */
+    color: #fff;
+    overflow: hidden;
+    padding-top: 50px;
+}
+#title .row{
+    margin-top: 5rem;
+}
+/* title color animaion  starts*/
+
+/* title color animaion  ends*/
+.navbar{
+    margin-bottom: 30px;
+    transition: all 0.4s ease;
+}
+.navbar-brand{
+    color: #000000;
+    font-size: 30px;
+    font-family:monospace;
+}
+.navbar-toggler{
+    border: 0 !important;
+    outline: none !important;
+}
+.nav-link{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar-brand{
+    color: #fff;
+    font-weight: 800;
+}
+.nav-link:hover{
+    color: rgb(12, 12, 12);
+}
+.title-child{
+    margin-top: 40px;
+}
+.img-fluid{
+    width: 350px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.title h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title p{
+    font-size: 20px;
+}
+.title-button a{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.offcanvas{
+    background-color: rgb(196, 235, 158);
+}
+.wave-img{
+    overflow: hidden;
+}
+/* -------------------section videos--------------- */
+#videos{
+    overflow: hidden;
+    background-image: url(images/Manga\ bg-01.png);
+}
+#videos h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: monospace;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.col-sm-12{
+    margin-bottom: 30px;
+}
+.card:hover{
+    box-shadow: 0 1rem 3rem rgba(33, 37, 41, 0.175) !important;
+}
+
+@media only screen and (max-width:600px){
+    .col-sm-12{
+        margin: 3% 18%;
+    }
+    #title .row{
+        margin-top: 8rem;
+    }
+}
+/* trending  section*/
+#trending{
+    margin-top: 30px;
+    
+}
+#trending img{
+    filter: brightness(0.4);
+}
+.carousel{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.carousel-caption a{
+    margin-bottom: 150px;
+}
+@media only screen and (max-width:600px){
+    .carousel-caption{
+        margin-bottom: -110px; 
+    }
+    #trending{
+        margin-bottom: 60px;
+    }
+}
+/* animation section */
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+.gradient-background{
+    background: linear-gradient(300deg,rgb(157, 19, 221),rgb(243, 193, 67),#47b6db);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+@keyframes  gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* animation section ends */
+
+
+/* contact query */
+#query .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#query .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#query .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#query input.form-control {
+    height: 44px;
+}
+#query{
+    margin-bottom:0;
+    overflow: hidden;
+}
